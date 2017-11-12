@@ -52,71 +52,71 @@ public class test {
        
        List<WorkerInfo> workerInfos=new ArrayList();
        List<RequesterTaskInfo> requesterTaskInfo=new ArrayList();
-       Integer worker_id=1;
+       int worker_id=1;
        String quality="[['1.750028','0.249972','0.0','0.0','0.0','0.0','0.0'],['0.0','2.0','0.0','0.0','0.0','0.0','0.0'],['0.0','1.0','0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','1.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0'],['0.10755','0.014776','0.014776','0.012194','0.009905','0.513037','0.327762'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0']]";
-       Integer level=1;
+       int level=1;
        Double aver_costtime=0.1;
        Double aver_di=0.2;
 	   Double aver_reward=1.0;
        WorkerInfo worker=new WorkerInfo(worker_id,  quality,  level, aver_costtime, aver_di,
 			 aver_reward);
        
-       Integer worker_id1=2;
+       int worker_id1=2;
        //String quality1="[['0.7','0.1','0.1'],['0.1','0.5','0.1'],['0.2','0.1','0.8']]";
        String quality1="[['1.0','0.0','0.0','1.0','0.0','0.0','0.0'],['0.750028','2.249972','0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','1.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0'],['0.10755','0.014776','0.014776','0.012194','0.009905','0.513037','0.327762']]";
-       Integer level1=2;
+       int level1=2;
        Double aver_costtime1=0.2;
        Double aver_di1=0.3;
 	   Double aver_reward1=2.0;
        WorkerInfo worker1=new WorkerInfo(worker_id1,  quality1,  level1, aver_costtime1, aver_di1,
 			 aver_reward1);
        
-       Integer worker_id2=3;
+       int worker_id2=3;
        //String quality2="[['0.4','0.5','0.1'],['0.1','0.4','0.1'],['0.2','0.1','0.4']]";
        String quality2="[['1.750028','1.249972','0.0','1.0','0.0'],['0.0','2.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','1.0','0.0'],['0.0','0.0','0.0','0.0','0.0']]";
-       Integer level2=2;
+       int level2=2;
        Double aver_costtime2=0.2;
        Double aver_di2=0.3;
 	   Double aver_reward2=3.0;
        WorkerInfo worker2=new WorkerInfo(worker_id2,  quality2,  level2, aver_costtime2, aver_di2,
 			 aver_reward2);
        
-       Integer worker_id3=4;
+       int worker_id3=4;
        //String quality3="[['0.5','0.1','0.1'],['0.1','0.5','0.1'],['0.2','0.5','0.8']]";
        String quality3="[['0.0','0.0','0.0','1.0','0.0'],['0.0','2.0','0.0','0.0','0.0'],['0.0','1.0','0.0','0.0','0.0'],['0.0','0.0','0.0','1.0','0.0'],['0.0','0.0','0.0','0.0','0.0']]";
-       Integer level3=2;
+       int level3=2;
        Double aver_costtime3=0.2;
        Double aver_di3=0.3;
 	   Double aver_reward3=4.0;
        WorkerInfo worker3=new WorkerInfo(worker_id3,  quality3,  level3, aver_costtime3, aver_di3, aver_reward3);
        
-       Integer worker_id4=5;
+       int worker_id4=5;
        String quality4="[['0.3','0.8','0.1'],['0.1','0.3','0.1'],['0.2','0.1','0.3']]";
-       Integer level4=2;
+       int level4=2;
        Double aver_costtime4=0.2;
        Double aver_di4=0.3;
 	   Double aver_reward4=5.0;
        WorkerInfo worker4=new WorkerInfo(worker_id4,  quality4,  level4, aver_costtime4, aver_di4, aver_reward4);
        
-       Integer worker_id5=6;
+       int worker_id5=6;
        String quality5="[['0.8','0.8','0.1'],['0.1','0.8','0.1'],['0.2','0.1','0.8']]";
-       Integer level5=2;
+       int level5=2;
        Double aver_costtime5=0.2;
        Double aver_di5=0.3;
 	   Double aver_reward5=6.0;
        WorkerInfo worker5=new WorkerInfo(worker_id5,  quality5,  level5, aver_costtime5, aver_di5, aver_reward5);
        
-       Integer worker_id6=7;
+       int worker_id6=7;
        String quality6="[['0.3','0.8','0.1'],['0.1','0.3','0.1'],['0.2','0.1','0.4']]";
-       Integer level6=2;
+       int level6=2;
        Double aver_costtime6=0.2;
        Double aver_di6=0.3;
 	   Double aver_reward6=6.0;
        WorkerInfo worker6=new WorkerInfo(worker_id6,  quality6,  level6, aver_costtime6, aver_di6, aver_reward6);
        
-       Integer worker_id7=8;
+       int worker_id7=8;
        String quality7="[['0.3','0.8','0.1'],['0.1','0.3','0.1'],['0.2','0.1','0.4']]";
-       Integer level7=2;
+       int level7=2;
        Double aver_costtime7=0.2;
        Double aver_di7=0.3;
 	   Double aver_reward7=6.0;
@@ -133,11 +133,11 @@ public class test {
 
 
 
-      Integer taskID=1;
+      int taskID=1;
       Timestamp deadline = null;
       Double each_reward=9.0;
-      Integer hastaken_number=4;
-      Integer worker_number=3;
+      int hastaken_number=4;
+      int worker_number=3;
       Double difficult_degree=0.5;
       RequesterTaskInfo requesterTask1=new RequesterTaskInfo( taskID, deadline, each_reward,  hastaken_number,worker_number,  difficult_degree);
      // requesterTaskInfo.add(requesterTask1);
@@ -159,7 +159,6 @@ public class test {
       //CaculateNum cal=new CaculateNum();
       //cal.getWorkNumber();
 
-      Integer times = null;
 	  //task1.getTakenDeadline(worker_number, times, workerInfos,requesterTask1);
 	  
 	 

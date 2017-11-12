@@ -3,17 +3,17 @@ package WorkerInfo;
 public class WorkerInfo {
 	
 	//涓轰簡鍒朵綔鎺ㄨ崘浠诲姟鐢ㄧ殑绫�
-	private Integer worker_id;
+	private int worker_id;
 	private String quality;
-	private Integer level;
+	private int level;
 	private Double aver_costtime;
 	private Double aver_di;
 	private Double aver_reward;
 	
-	public Integer getWorker_id() {
+	public int getWorker_id() {
 		return worker_id;
 	}
-	public void setWorker_id(Integer worker_id) {
+	public void setWorker_id(int worker_id) {
 		this.worker_id = worker_id;
 	}
 	public String getQuality() {
@@ -22,10 +22,10 @@ public class WorkerInfo {
 	public void setQuality(String quality) {
 		this.quality = quality;
 	}
-	public Integer getLevel() {
+	public int getLevel() {
 		return level;
 	}
-	public void setLevel(Integer level) {
+	public void setLevel(int level) {
 		this.level = level;
 	}
 	public Double getAver_costtime() {
@@ -46,7 +46,7 @@ public class WorkerInfo {
 	public void setAver_reward(Double aver_reward) {
 		this.aver_reward = aver_reward;
 	}
-	public WorkerInfo(Integer worker_id, String quality, Integer level, Double aver_costtime, Double aver_di,
+	public WorkerInfo(int worker_id, String quality, int level, Double aver_costtime, Double aver_di,
 			Double aver_reward) {
 		super();
 		this.worker_id = worker_id;

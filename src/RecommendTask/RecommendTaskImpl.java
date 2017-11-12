@@ -15,8 +15,7 @@ public class RecommendTaskImpl implements RecommendTask {
     private int num;
     private int j = 0;
 
-    @SuppressWarnings({"unchecked", "rawtypes"})
-    public String[] getRecommendTask(Integer worker_number, Integer times, List<WorkerInfo> workerInfos, RequesterTaskInfo requesterInfos) {
+    public String[] getRecommendTask(int worker_number, int times, List<WorkerInfo> workerInfos, RequesterTaskInfo requesterInfos) {
         // TODO Auto-generated method stub
         ArrayList messageid = new ArrayList();
         ArrayList messagequality = new ArrayList();
@@ -266,7 +265,7 @@ public class RecommendTaskImpl implements RecommendTask {
     }
 
     @Override
-    public Timestamp getTakenDeadline(Integer worker_number, Integer times, List<WorkerInfo> workerInfos,
+    public Timestamp getTakenDeadline(int worker_number, int times, List<WorkerInfo> workerInfos,
                                       RequesterTaskInfo requesterInfos) {
         // TODO Auto-generated method stub
         Date date = new Date();
