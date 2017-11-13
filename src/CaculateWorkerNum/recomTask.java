@@ -85,40 +85,12 @@ public class recomTask {
     				m=j;
     				break;
     			}
-    			/*if(message.charAt(j)==('[')){
-    				n=j;
-    				break;
-    			}*/
-				/*wokerMessage[m]=message.toString().substring(m1,j);
-				System.out.println(wokerMessage[m]);
-				m++;
-				m1=j+3;*/
 		}
 			System.out.println(m);
 			System.out.println(n);
 
-        	//System.out.println(list);
         }
-    	//combineWorker.toString(); 
-    	/*double[] quality=new double[num];//
-    	String[] id=new String[num];
-    	double[] cost=new double[num];*/
-	     
-    	/*for(int i=0;i<combineWorker.size();i++){
-    		String[] wokerMessage =new String[num];
-    		String message=combineWorker.get(i).toString().substring(1,combineWorker.get(i).toString().length()-1);
-    		System.out.println(message);
-    		int m=0,m1=1;
-    		for(int j=0;j<message.length();j++){
-    			if(message.toString().charAt(j)==(']')){
-    					wokerMessage[m]=message.toString().substring(m1,j);
-    					System.out.println(wokerMessage[m]);
-    					m++;
-    					m1=j+3;
-    			}
-    		}
-    		//System.out.println(combineWorker.get(i));
-    	}*/
+
 		return null;
     	
     }

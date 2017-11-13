@@ -19,39 +19,12 @@ public class test {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 	   List<ArrayList> workerMessage =new ArrayList();
-       
-	  /* for(int i=1;i<6;i++){
-		   ArrayList message=new ArrayList<String>();
-		   message.add("name"+i);
-	       message.add("0.5");
-	       message.add(i+1);
-	       workerMessage.add(message);  
-	   }*/
-       //System.out.println(workerMessage.toString());
-	   /*ArrayList messageid=new ArrayList<String>();
-	   for(int i=1;i<4;i++){
-		   messageid.add("name"+i);
-	   }
-	   messageid.add("4");
-	   messageid.add("5");
-	   
-	   ArrayList messagequlity=new ArrayList<String>();
-	   for(int i=1;i<6;i++){
-		   messagequlity.add((double)((double)i/5.0));
-		   //System.out.println(messagequlity);
-	   }
-	   ArrayList messagecost=new ArrayList<String>();
-	   for(int i=1;i<6;i++){
-		   messagecost.add(i);
-	   }
-	   
-       int n=3;
-       taskAssignment task=new taskAssignment();
-       task.recomTask(messageid,messagequlity, messagecost,n);*/
-       
-       
+
+
        List<WorkerInfo> workerInfos=new ArrayList();
        List<RequesterTaskInfo> requesterTaskInfo=new ArrayList();
+
+//       ¹¤ÈËÊ¾Àý
        int worker_id=1;
        String quality="[['1.750028','0.249972','0.0','0.0','0.0','0.0','0.0'],['0.0','2.0','0.0','0.0','0.0','0.0','0.0'],['0.0','1.0','0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','1.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0'],['0.10755','0.014776','0.014776','0.012194','0.009905','0.513037','0.327762'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0']]";
        int level=1;
@@ -62,7 +35,6 @@ public class test {
 			 aver_reward);
        
        int worker_id1=2;
-       //String quality1="[['0.7','0.1','0.1'],['0.1','0.5','0.1'],['0.2','0.1','0.8']]";
        String quality1="[['1.0','0.0','0.0','1.0','0.0','0.0','0.0'],['0.750028','2.249972','0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','1.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0'],['0.0','0.0','0.0','0.0','0.0','0.0','0.0'],['0.10755','0.014776','0.014776','0.012194','0.009905','0.513037','0.327762']]";
        int level1=2;
        Double aver_costtime1=0.2;
@@ -148,30 +120,13 @@ public class test {
       for(int m=0;m<work.length;m++){
 	    	System.out.println(work[m]);
       }
-      //System.out.println(workerInfos);
-      
-      /*String wquality="[['0.7','0.1','0.1'],['0.1','0.5','0.1'],['0.2','0.1','0.8']]";
-  	  Double tfloat_minute=0.0;
-  	  Double wbase=1.0;
-  	  Double di=0.6;
-  	  CaculateSalaryImp test=new CaculateSalaryImp();
-  	  System.out.println(test.getSalary(wquality, tfloat_minute, wbase, di));*/
-      //CaculateNum cal=new CaculateNum();
-      //cal.getWorkNumber();
 
-	  //task1.getTakenDeadline(worker_number, times, workerInfos,requesterTask1);
-	  
-	 
-	  //String[] wm={"[['0.7','0.1','0.1'],['0.1','0.5','0.1'],['0.2','0.1','0.8']]","[['0.7','0.1','0.1'],['0.1','0.5','0.1'],['0.2','0.1','0.8']]","[['0.7','0.1','0.1'],['0.1','0.5','0.1'],['0.2','0.1','0.8']]"};
-	  String[] wm={"[['1','0','0'],['0','0','0'],['0','0','0']]","[['1','0','0'],['0','0','0'],['0','0','0']]"};
+      System.out.println(task1.getTakenDeadline(5, 1,  workerInfos, requesterTask1));
+      String[] wm={"[['1','0','0'],['0','0','0'],['0','0','0']]","[['1','0','0'],['0','0','0'],['0','0','0']]"};
 
 	  CaculateNumImpl num=new CaculateNumImpl();
 	  int n;
-	 // n=num.getWorkNumber(wm);
-	  
-	  //String wm1="[['0.7','0.1','0.1'],['0.1','0.5','0.1'],['0.2','0.1','0.8']]";
-	 // CaculateQualityImpl test1=new CaculateQualityImpl();
-	  //System.out.println(test1.CaculateQua(wm1));
+
 	}
 	
 

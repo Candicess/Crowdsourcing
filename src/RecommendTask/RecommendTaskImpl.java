@@ -18,18 +18,13 @@ public class RecommendTaskImpl implements RecommendTask {
     public String[] getRecommendTask(int worker_number, int times, List<WorkerInfo> workerInfos, RequesterTaskInfo requesterInfos) {
         // TODO Auto-generated method stub
         ArrayList messageid = new ArrayList();
-        ArrayList messagequality = new ArrayList();
-        //ArrayList messagecost=new ArrayList();
         ArrayList wm = new ArrayList();
+        ArrayList messagequality = ReadWm(wm);
         for (int i = 0; i < workerInfos.size(); i++) {
             messageid.add(workerInfos.get(i).getWorker_id());
             wm.add(workerInfos.get(i).getQuality());
-            //messagecost.add(workerInfos.get(i).getAver_reward());
         }
-        //for(int j=0;j<wm.size();j++){
-        messagequality = ReadWm(wm);
-        //System.out.println(messagequality);
-        //}
+
         /**
          *将工人id和质量放在一个String类型的数组中，用于后续排序
          */
@@ -52,8 +47,7 @@ public class RecommendTaskImpl implements RecommendTask {
         /**
          * 排序之后的工人质量及id信息
          */
-        String[][] sortMessage = new String[messageid.size()][2];
-        sortMessage = bubbleSort(quaId);
+        String[][] sortMessage = bubbleSort(quaId);
 
         num = worker_number;//获取需要的工人数目
 
@@ -269,7 +263,7 @@ public class RecommendTaskImpl implements RecommendTask {
                                       RequesterTaskInfo requesterInfos) {
         // TODO Auto-generated method stub
         Date date = new Date();
-        Timestamp time = new Timestamp(date.getTime() + 1000 * 60 * 20);
+        Timestamp time = new Timestamp(date.getTime() + 1000 * 60 * 1);
         return time;
     }
 }

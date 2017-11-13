@@ -3,8 +3,8 @@ package WorkerInfo;
 import java.sql.Timestamp;
 
 public class RequesterTaskInfo {
-	//杈撳叆浠诲姟鏁扮粍锛�浠诲姟ID锛�鎴鏃堕棿锛�each_reward锛�宸叉敹褰曞伐浜烘暟锛岄渶瑕佸伐浜烘暟锛�浠诲姟闅惧害绯绘暟
-	//杩欎釜绫绘槸涓轰簡甯姪璁＄畻鎺ㄨ崘浠诲姟瀹炵幇
+	//杈??浠诲??扮?锛?浠诲?ID锛?????堕?锛?each_reward锛?宸叉?褰?伐浜烘?锛??瑕?伐浜烘?锛?浠诲??惧害绯绘?
+	//杩?釜绫绘?涓轰?甯??璁＄??ㄨ?浠诲?瀹??
 	
 	private int taskID;
 	private Timestamp deadline;
@@ -12,6 +12,8 @@ public class RequesterTaskInfo {
 	private int hastaken_number;
 	private int worker_number;
 	private Double difficult_degree;
+
+
 	public int getTaskID() {
 		return taskID;
 	}
@@ -48,6 +50,8 @@ public class RequesterTaskInfo {
 	public void setDifficult_degree(Double difficult_degree) {
 		this.difficult_degree = difficult_degree;
 	}
+
+
 	public RequesterTaskInfo(int taskID, Timestamp deadline, Double each_reward, int hastaken_number,
 			int worker_number, Double difficult_degree) {
 		super();
