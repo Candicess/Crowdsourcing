@@ -4,12 +4,8 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-import CaculateQuality.CaculateQualityImpl;
-import CaculateSalary.CaculateSalaryImp;
 import CaculateWorkerNum.CaculateNumImpl;
-import CaculateWorkerNum.recomTask;
-import CaculateWorkerNum.taskAssignment;
-import RecommendTask.RecommendTaskImpl;
+import RecommendTask.FirstCountNumRecommend;
 import WorkerInfo.RequesterTaskInfo;
 import WorkerInfo.WorkerInfo;
 
@@ -115,7 +111,7 @@ public class test {
      // requesterTaskInfo.add(requesterTask1);
       
       String[] work;
-      RecommendTaskImpl task1=new RecommendTaskImpl();
+      FirstCountNumRecommend task1=new FirstCountNumRecommend();
       work=task1.getRecommendTask(5, 1,  workerInfos, requesterTask1);
       for(int m=0;m<work.length;m++){
 	    	System.out.println(work[m]);

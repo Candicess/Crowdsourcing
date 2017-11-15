@@ -10,7 +10,7 @@ import WorkerInfo.RequesterTaskInfo;
 import WorkerInfo.WorkerInfo;
 import net.sf.json.JSONArray;
 
-public class RecommendTaskImpl implements RecommendTask {
+public class FirstCountNumRecommend implements RecommendTask {
 
     private int num;
     private int j = 0;
@@ -19,12 +19,11 @@ public class RecommendTaskImpl implements RecommendTask {
         // TODO Auto-generated method stub
         ArrayList messageid = new ArrayList();
         ArrayList wm = new ArrayList();
-        ArrayList messagequality = ReadWm(wm);
         for (int i = 0; i < workerInfos.size(); i++) {
             messageid.add(workerInfos.get(i).getWorker_id());
             wm.add(workerInfos.get(i).getQuality());
         }
-
+        ArrayList messagequality = ReadWm(wm);
         /**
          *将工人id和质量放在一个String类型的数组中，用于后续排序
          */
@@ -42,7 +41,6 @@ public class RecommendTaskImpl implements RecommendTask {
         }
 
         average = sum / messageid.size();//工人的平均质量
-        //System.out.println(average);
 
         /**
          * 排序之后的工人质量及id信息
@@ -57,26 +55,8 @@ public class RecommendTaskImpl implements RecommendTask {
              * */
             String[] worker = new String[num];
 
-		   /* //推荐的工人个数大于平台的工人个数时，将工人全部推荐出去
-            if(num>sortMessage.length){
-		    	for(int m=0;m<sortMessage.length;m++){
-		    		worker[m]=sortMessage[m][0];
-                }
-		    	worker=(String[]) change(worker);
-		    }
-		    
-		    else{*/
-            int l = 0;
-            //int j=0;
             while (j < num) {
                 int index = -1;//记录大于平均质量的第一个下标
-                //测试
-                    /*System.out.println("!");
-		    	    for(int m=0;m<sortMessage.length;m++){
-				    	//System.out.println(sortMessage[m][0]);
-				    	System.out.println(sortMessage[m][1]);
-	                }*/
-                //System.out.println(j);
                 for (int i = 0; i < sortMessage.length - j; i++) {
                     if (Double.parseDouble(sortMessage[i][1]) >= average) {
                         index = i;
@@ -115,11 +95,10 @@ public class RecommendTaskImpl implements RecommendTask {
                 }
                 sortMessage[sortMessage.length - 1 - j][0] = "0";
                 sortMessage[sortMessage.length - 1 - j][1] = "0";
-                //System.out.println(worker[j]);
                 j++;//控制取出的工人id数目
             }
-            //}
-		        
+
+
 		        /*
 		         * 填补未选出的工人id
 		         */
@@ -130,7 +109,7 @@ public class RecommendTaskImpl implements RecommendTask {
             }
             return worker;
         } catch (Exception e) {
-            System.out.println("任务推荐失败");
+            System.out.println("Recommend failed");
         }
         return null;
     }
@@ -211,7 +190,7 @@ public class RecommendTaskImpl implements RecommendTask {
      */
     private ArrayList ReadWm(ArrayList<String> wm) {
         // TODO Auto-generated method stub
-        ArrayList<Object> list = new ArrayList<Object>();
+        ArrayList<Object> list = new ArrayList<>();
         JSONArray jsonArray = new JSONArray();//定义json，接收数组
         Object w = new double[wm.toArray().length][wm.toArray().length];//
         Object[] a = wm.toArray();
@@ -227,8 +206,6 @@ public class RecommendTaskImpl implements RecommendTask {
         for (int z = 0; z < workmodel.length; z++) {
             w = jsonArray.get(z);
 
-            //测试
-            //System.out.println(w);
             int n = 0;
             for (int i = 0; i < w.toString().length(); i++) {
                 if (w.toString().charAt(i) == (']'))
@@ -238,8 +215,6 @@ public class RecommendTaskImpl implements RecommendTask {
             double qua = 0;//工人的准确性
             JSONArray arr = JSONArray.fromObject(w);
 
-            //测试
-            //System.out.println(arr);
             /**
              * 从json数组中读取出数据库中的工人模型矩阵
              */

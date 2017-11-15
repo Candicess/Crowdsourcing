@@ -5,7 +5,6 @@ import java.util.List;
 
 public class taskAssignment {
 	private int num;//控制推荐的工人的个数
-	@SuppressWarnings("rawtypes")
 	public String[] recomTask(ArrayList messageid,ArrayList messagequality,ArrayList messagecost,int n){
 		num=n;
 		ArrayList combineWorker =new ArrayList();//用来记录工人组合情况	
@@ -15,11 +14,11 @@ public class taskAssignment {
 		 * 得出所有工人的组合情况
 		 **/
 		//如果输入的工人信息为空，则返回空值
-		if(messageid==null||messageid.size()==0){  
+		if(messageid==null||messageid.size()==0){
             return null ; 
         }  
         ArrayList list=new ArrayList();  
-        combineWorker=combine(messageid,0,n,list); 
+        combineWorker=combine(messageid,0,n,list);
         System.out.println(combineWorker.toString());
         
         
