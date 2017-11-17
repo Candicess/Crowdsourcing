@@ -234,11 +234,11 @@ public class FirstCountNumRecommend implements RecommendTask {
     }
 
     @Override
-    public Timestamp getTakenDeadline(int worker_number, int times, List<WorkerInfo> workerInfos,
+    public Timestamp getTakenDeadline(int worker_number, int times, int mins , List<WorkerInfo> workerInfos,
                                       RequesterTaskInfo requesterInfos) {
         // TODO Auto-generated method stub
         Date date = new Date();
-        Timestamp time = new Timestamp(date.getTime() + 1000 * 60 * 1);
+        Timestamp time = new Timestamp(date.getTime() + 1000 * 60 * mins);
         return time;
     }
 }
