@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="574b0aa2-bdc3-4590-8dca-c5f8e528898b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RecommendTask/GreedyQualityRecommend.java" afterPath="$PROJECT_DIR$/src/RecommendTask/GreedyQualityRecommend.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test/test.java" afterPath="$PROJECT_DIR$/src/Test/test.java" />
-    </list>
+    <list default="true" id="574b0aa2-bdc3-4590-8dca-c5f8e528898b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -222,17 +218,6 @@
               <item name="Crowdsoucing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Crowdsoucing" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Crowdsoucing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crowdsoucing" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crowdsoucing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crowdsoucing" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="jsonlib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -380,12 +365,12 @@
       <workItem from="1510912063547" duration="2788000" />
       <workItem from="1510925399621" duration="3184000" />
       <workItem from="1511169377333" duration="484000" />
-      <workItem from="1517040898358" duration="6191000" />
+      <workItem from="1517040898358" duration="6281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70536000" />
+    <option name="totallyTimeSpent" value="70626000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
