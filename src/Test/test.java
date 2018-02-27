@@ -112,7 +112,7 @@ public class test {
 
 //      FirstCountNumRecommend task1=new FirstCountNumRecommend();
         GreedyQualityRecommend task2 = new GreedyQualityRecommend();
-        String[] work = task2.getRecommendTask(5, 1,  workerInfos, requesterTask1);
+         String[] work = task2.getRecommendTask(5, 1,  workerInfos, requesterTask1);
         System.out.println(work.length);
       for(int m=0;m<work.length;m++){
 	    	System.out.println(work[m].toString());
