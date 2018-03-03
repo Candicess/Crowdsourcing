@@ -1,4 +1,4 @@
-package GreedyCalculateMV;
+package CaculateMV;
 
 /**
  * 工人实体类
@@ -15,12 +15,12 @@ public class Worker {
     /**
      * 工人薪水
      */
-    private double salary;
+    private double cost;
 
-    public Worker(int id, double quality, double salary) {
+    public Worker(int id, double quality, double cost) {
         this.id = id;
         this.quality = quality;
-        this.salary = salary;
+        this.cost = cost;
     }
 
     public int getId() {
@@ -39,12 +39,12 @@ public class Worker {
         this.quality = quality;
     }
 
-    public double getSalary() {
-        return salary;
+    public double getCost() {
+        return cost;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
     @Override

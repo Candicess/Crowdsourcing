@@ -1,4 +1,4 @@
-package GreedyCalculateMV;
+package CaculateMV;
 
 import java.util.ArrayList;
 import java.util.List;

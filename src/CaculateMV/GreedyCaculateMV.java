@@ -1,11 +1,11 @@
-package GreedyCalculateMV;
+package CaculateMV;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Main {
+public class GreedyCaculateMV {
     public static void main(String[] args) {
         // ÷ ¡ø„–÷µ
         double QUALITY_THRESHOLD = 0.95;
