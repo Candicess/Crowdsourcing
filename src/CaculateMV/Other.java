@@ -22,10 +22,10 @@ public class Other {
     private static Queue<List<Integer>> mWorkersQueue = new LinkedList<>();
 
     public static void main(String[] args) {
-        //MV算法的工人初始化
+        // MV算法的工人初始化
         mWorkersInit.add(new Worker(1, 0.8, 1));
-        mWorkersInit.add(new Worker(2, 0.8, 1));
-        mWorkersInit.add(new Worker(3, 0.34, 0.1));
+        mWorkersInit.add(new Worker(2, 0.34, 1));
+        mWorkersInit.add(new Worker(3, 0.8, 0.1));
 
         // 根据工人初始数据集初始化工人Id队列
         for (Worker worker : mWorkersInit) {
@@ -40,16 +40,12 @@ public class Other {
         double pa = 0.6;
         double pb = 0.3;
         double pc = 0.1;
-        double q1 = 0.8;
-        double q2 = 0.34;
-        double q3 = 0.8;
 
-        List<Integer> IDlist = Arrays.asList(1,2);
-        // TODO: 18/3/4 迭代过程统一化 
-        System.out.println(calcQuality(IDlist));
-        bayesDeduction(pa, pb, pc, q1,q2);
-        List<Double> res = iterationBayesDeduction(pa, pb, pc, q1, q2);
-        method3Answer1Worker(res.get(0), res.get(1), res.get(2), q3);
+        List<Double> resList = method3Answer1Worker(pa, pb, pc, mWorkersInit.get(0).getQuality());
+        for (int i = 1; i < mWorkersInit.size(); i++) {
+            resList = method3Answer1Worker(resList.get(0), resList.get(1), resList.get(2), mWorkersInit.get(i).getQuality());
+        }
+        System.out.println(resList);
     }
 
     private static void method2Answer2Worker(double pa, double pb, double q1, double q2) {
